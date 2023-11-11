@@ -93,8 +93,6 @@ class ApiService {
 
       final jsonResponse = response.data;
 
-      print(jsonResponse);
-
       if (jsonResponse['error'] != null) {
         throw HttpException(jsonResponse['error']["message"]);
       }

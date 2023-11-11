@@ -38,7 +38,6 @@ class _MyHomePageState extends State<HomePage> {
     setState(() {
       detecting = true;
     });
-
     try {
       diseaseName =
           await apiService.sendImageToGPT4Vision(image: _selectedImage!);
